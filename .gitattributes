@@ -1,0 +1,12 @@
+* text=auto
+
+*.js text eol=lf
+*.ts text eol=lf
+
+*.bat text eol=crlf
+*.ini text eol=crlf
+*.sql text eol=crlf
+
+.exe binary
+.png binary
+.jpg binary

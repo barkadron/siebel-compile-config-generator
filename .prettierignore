@@ -1,0 +1,9 @@
+/.git
+/.schemas
+/node_modules
+/build
+/lib
+/scripts
+package-lock.json
+# package.json
+*.log

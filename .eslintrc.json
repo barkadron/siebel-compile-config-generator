@@ -1,0 +1,56 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": false
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module",
+        "ecmaVersion": 2020
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "eslint-comments",
+        "promise",
+        "prettier"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:eslint-comments/recommended",
+        "plugin:promise/recommended",
+        "airbnb-base",
+        "airbnb-typescript/base",
+        "prettier"
+    ],
+    "rules": {
+        "class-methods-use-this": "off",
+        "no-var": "error",
+        "no-console": "off",
+        "no-await-in-loop": "off",
+        "no-restricted-syntax": "off",
+        "no-nested-ternary": "off",
+        "no-underscore-dangle": [ "error", { "allow": [ "__basedir" ] }],
+        "no-use-before-define": [ "error", { "functions": false, "classes": true, "variables": true } ],
+        "import/prefer-default-export": "off",
+        "import/no-dynamic-require": "off",
+        "global-require": "off",
+        "prefer-destructuring": [ "error", { "object": true, "array": false } ],
+        "@typescript-eslint/no-use-before-define": [ "error", { "functions": false, "classes": true, "variables": true } ],
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-floating-promises": [ "error", { "ignoreVoid": true, "ignoreIIFE": true } ],
+        "@typescript-eslint/no-useless-constructor": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/unbound-method": [ "error", { "ignoreStatic": true } ],
+        "@typescript-eslint/prefer-regexp-exec": "off",
+        "prettier/prettier": [ "error", { "endOfLine": "auto" } ]
+    }
+}
